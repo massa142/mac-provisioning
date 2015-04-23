@@ -46,6 +46,7 @@
       - { name: google-japanese-ime }
       - { name: gayzo }
       - { name: hipchat }
+      - { name: hoster }
       - { name: intellij-idea }
       - { name: iterm2 }
       - { name: java }
