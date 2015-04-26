@@ -14,6 +14,7 @@
       - { name: ansible }
       - { name: heroku-toolbelt }
       - { name: git }
+      - { name: hub }
       - { name: zsh, install_options: disable-etcdir }
       - { name: wget }
       - { name: curl }
