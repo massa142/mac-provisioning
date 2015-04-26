@@ -30,7 +30,7 @@
     homebrew_cask_packages:
       - { name: adobe-reader }
       - { name: alfred }
-      - { name: android-Studio }
+      - { name: android-studio }
       - { name: base }
       - { name: cyberduck }
       - { name: duet }
@@ -44,7 +44,7 @@
       - { name: github }
       - { name: google-chrome }
       - { name: google-japanese-ime }
-      - { name: gayzo }
+      - { name: gyazo }
       - { name: hipchat }
       - { name: hoster }
       - { name: intellij-idea }
@@ -54,7 +54,6 @@
       - { name: kindle }
       - { name: kobito }
       - { name: licecap }
-      - { name: line }
       - { name: mysqlworkbench }
       - { name: pycharm }
       - { name: seil }
