@@ -18,6 +18,7 @@
       - { name: git }
       - { name: hub }
       - { name: zsh, install_options: disable-etcdir }
+      - { name: zsh-completions }
       - { name: wget }
       - { name: curl }
       - { name: nkf }
@@ -125,3 +126,27 @@
       shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
       args:
         creates: ~/.oh-my-zsh/
+    
+    # Ricty
+    - name: xquartz のインストール (for Ricty)
+      homebrew_cask: name=xquartz
+    - name: fontforge のインストール (for Ricty)
+      homebrew: name=fontforge
+    - name: Ricty のインストール
+      homebrew: name=ricty
+    - name: 生成されたフォントファイルをコピー
+      shell: cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
+      args:
+        creates: ~/Library/Fonts/Ricty-Bold.ttf
+      notify: run fc-cache
+    
+    # vim-neobundle
+    - name: mkdir vim-neobundle dir
+      file: path=~/.vim/bundle state=directory
+      notify: install neobundle
+  
+  handlers:
+    - name: run fc-cache
+      shell: fc-cache -vf
+    - name: install neobundle
+      command: git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
