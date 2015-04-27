@@ -27,6 +27,7 @@
       - { name: redis }
       - { name: imagemagick }
       - { name: maven }
+      - { name: composer }
 
     homebrew_cask_packages:
       - { name: adobe-reader }
