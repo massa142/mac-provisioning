@@ -5,12 +5,14 @@
   vars:
     homebrew_taps:
       - caskroom/cask
-
+      - motemen/ghq
+      
     homebrew_packages:
       - { name: readline }
       - { name: openssl }
       - { name: openssl, state: linked, install_options: force }
       - { name: python }
+      - { name: pyenv }
       - { name: ansible }
       - { name: heroku-toolbelt }
       - { name: git }
@@ -27,7 +29,9 @@
       - { name: redis }
       - { name: imagemagick }
       - { name: maven }
-      - { name: composer }
+      - { name: node }
+      - { name: macvim, options: 'override-system-vim', 'with-lua', 'with-cscope' }
+      - { name: ghq }
 
     homebrew_cask_packages:
       - { name: adobe-reader }
