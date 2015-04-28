@@ -6,12 +6,14 @@
     homebrew_taps:
       - caskroom/cask
       - motemen/ghq
+      - homebrew/php
       
     homebrew_packages:
       - { name: readline }
       - { name: openssl }
       - { name: openssl, state: linked, install_options: force }
       - { name: python }
+      - { name: python3 }
       - { name: pyenv }
       - { name: ansible }
       - { name: heroku-toolbelt }
@@ -33,6 +35,10 @@
       - { name: node }
       - { name: macvim, options: 'override-system-vim', 'with-lua', 'with-cscope' }
       - { name: ghq }
+      - { name: npm }
+      - { name: php56 }
+      - { name: php56-xdebug }
+      - { name: phpenv }
 
     homebrew_cask_packages:
       - { name: adobe-reader }
@@ -73,7 +79,7 @@
       - { name: xtrafinder }
       - { name: vagrant }
       - { name: virtualbox }
-      
+      - { name: 1password }
     gem_packages:
       - { name: homesick }
 
