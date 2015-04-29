@@ -151,6 +151,9 @@
       file: path=~/.vim/bundle state=directory
       notify: install neobundle
   
+    # karabiner
+    - name: import karabiner settings
+      shell: sh files/karabiner-import.sh
   handlers:
     - name: run fc-cache
       shell: fc-cache -vf
