@@ -33,10 +33,9 @@
       - { name: redis }
       - { name: imagemagick }
     #  - { name: maven }
-      - { name: node }
+      - { name: nodebrew }
       - { name: macvim, options: 'override-system-vim', 'with-lua', 'with-cscope' }
       - { name: ghq }
-      - { name: npm }
       - { name: php56 }
       - { name: php56-xdebug }
       - { name: phpenv }
