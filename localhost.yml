@@ -33,7 +33,6 @@
       - { name: redis }
       - { name: imagemagick }
     #  - { name: maven }
-      - { name: nodebrew }
       - { name: macvim, options: 'override-system-vim', 'with-lua', 'with-cscope' }
       - { name: ghq }
       - { name: php56 }
@@ -129,6 +128,10 @@
       gem: name={{ item.name }} state={{ item.state | default('latest') }}
       with_items: gem_packages
   
+    # nodebrew
+    - name: nodebrew のインストール
+      shell: curl -L git.io/nodebrew | perl - setup
+      
     # oh-my-zsh
     - name: oh-my-zsh のインストール
       shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
