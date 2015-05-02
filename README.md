@@ -7,3 +7,6 @@ Usage
 1. `echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.bash_profile`
 2. `source ~/.bash_profile`
 3. `ansible-playbook -i hosts -vv localhost.yml`
+
+以下に詳しく書いてます。
+[Ansible＆Homebrew＆homesickでMac開発環境構築 - Qiita](http://qiita.com/massa142/items/441a7fc4aaad757e8eb9)
