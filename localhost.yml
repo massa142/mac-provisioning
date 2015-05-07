@@ -45,6 +45,7 @@
       - { name: adobe-reader }
       - { name: alfred }
       - { name: android-studio }
+      - { name: appcleaner }
       - { name: base }
       - { name: cyberduck }
       - { name: duet }
