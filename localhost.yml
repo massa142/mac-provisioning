@@ -48,6 +48,7 @@
       - { name: appcleaner }
       - { name: base }
       - { name: cyberduck }
+      - { name: coteditor }
       - { name: duet }
       - { name: evernote }
       - { name: dash }
