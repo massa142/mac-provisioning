@@ -35,16 +35,16 @@
     #  - { name: maven }
       - { name: macvim, options: 'override-system-vim', 'with-lua', 'with-cscope' }
       - { name: ghq }
-      - { name: php56 }
-      - { name: php56-xdebug }
-      - { name: phpenv }
+    #  - { name: php56 }
+    #  - { name: php56-xdebug }
+    #  - { name: phpenv }
       - { name: automake }
       - { name: pkg-config }
 
     homebrew_cask_packages:
       - { name: adobe-reader }
       - { name: alfred }
-      - { name: android-studio }
+    #  - { name: android-studio }
       - { name: appcleaner }
       - { name: base }
       - { name: cyberduck }
@@ -56,14 +56,14 @@
       - { name: firefox }
       - { name: fluid }
       - { name: flux }
-      - { name: genymotion }
+    #  - { name: genymotion }
       - { name: github }
       - { name: google-chrome }
       - { name: google-japanese-ime }
-      - { name: gyazo }
-      - { name: hipchat }
+    #  - { name: gyazo }
+    #  - { name: hipchat }
     #  - { name: hoster }
-      - { name: intellij-idea }
+    #  - { name: intellij-idea }
       - { name: iterm2 }
       - { name: java }
       - { name: karabiner }
@@ -82,7 +82,7 @@
       - { name: xtrafinder }
       - { name: vagrant }
       - { name: virtualbox }
-      - { name: 1password }
+    #  - { name: 1password }
     gem_packages:
       - { name: homesick }
 
