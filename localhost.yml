@@ -39,7 +39,8 @@
     #  - { name: php56-xdebug }
     #  - { name: phpenv }
       - { name: automake }
-      - { name: pkg-config }
+      - { name: graphviz }
+      - { name: doxygen }
 
     homebrew_cask_packages:
       - { name: adobe-reader }
