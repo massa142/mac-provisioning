@@ -51,9 +51,9 @@
       - { name: cyberduck }
       - { name: coteditor }
       - { name: duet }
-      - { name: evernote }
       - { name: dash }
       - { name: dropbox }
+      - { name: emacs }
       - { name: firefox }
       - { name: fluid }
       - { name: flux }
