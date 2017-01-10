@@ -4,87 +4,71 @@
   sudo: no
   vars:
     homebrew_taps:
-      - caskroom/cask
-      - motemen/ghq
-      - homebrew/php
       - sanemat/font
       
     homebrew_packages:
-      - { name: readline }
+      - { name: ansible }
+      - { name: autoconf }
+      - { name: automake }
+      - { name: curl }
+      - { name: ghq }
+      - { name: git }
+      - { name: go }
+      - { name: graphviz }
+      - { name: hub }
+      - { name: imagemagick }
+      - { name: macvim, options: 'override-system-vim', 'with-lua', 'with-cscope' }
+      - { name: mysql }
+      - { name: nkf }
       - { name: openssl }
       - { name: openssl, state: linked, install_options: force }
+      - { name: peco }
+      - { name: postgresql }
+      - { name: pyenv }
       - { name: python }
       - { name: python3 }
-      - { name: pyenv }
-      - { name: ansible }
-      - { name: heroku-toolbelt }
-      - { name: git }
-      - { name: hub }
+      - { name: rbenv }
+      - { name: readline }
+      - { name: redis }
+      - { name: ruby-build }
+      - { name: sqlite }
+      - { name: wget }
       - { name: zsh, install_options: disable-etcdir }
       - { name: zsh-completions }
-      - { name: wget }
-      - { name: curl }
-      - { name: nkf }
-      - { name: peco }
-      - { name: rbenv }
-      - { name: ruby-build }
-      - { name: mysql }
-      - { name: sqlite }
-      - { name: redis }
-      - { name: imagemagick }
-    #  - { name: maven }
-      - { name: macvim, options: 'override-system-vim', 'with-lua', 'with-cscope' }
-      - { name: ghq }
-    #  - { name: php56 }
-    #  - { name: php56-xdebug }
-    #  - { name: phpenv }
-      - { name: automake }
-      - { name: graphviz }
-      - { name: doxygen }
 
     homebrew_cask_packages:
       - { name: adobe-reader }
       - { name: alfred }
-    #  - { name: android-studio }
       - { name: appcleaner }
       - { name: base }
       - { name: cyberduck }
       - { name: coteditor }
-      - { name: duet }
-      - { name: dash }
       - { name: dropbox }
       - { name: emacs }
       - { name: firefox }
-      - { name: fluid }
       - { name: flux }
-    #  - { name: genymotion }
       - { name: github }
       - { name: google-chrome }
       - { name: google-japanese-ime }
-    #  - { name: gyazo }
-    #  - { name: hipchat }
-    #  - { name: hoster }
-    #  - { name: intellij-idea }
+      - { name: hoster }
       - { name: iterm2 }
       - { name: java }
-      - { name: karabiner }
+      - { name: jetbrains-toolbox }
+      - { name: karabiner-elements }
       - { name: kindle }
       - { name: kobito }
       - { name: licecap }
       - { name: mysqlworkbench }
-      - { name: pycharm }
       - { name: rdm }
-      - { name: seil }
       - { name: sequel-pro }
       - { name: skype }
       - { name: slack }
       - { name: sourcetree }
       - { name: sublime-text }
-      - { name: seil }
-      - { name: xtrafinder }
       - { name: vagrant }
       - { name: virtualbox }
-    #  - { name: 1password }
+      - { name: vivaldi }
+      - { name: 1password }
     gem_packages:
       - { name: homesick }
 
