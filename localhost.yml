@@ -17,6 +17,7 @@
       - { name: graphviz }
       - { name: hub }
       - { name: imagemagick }
+      - { name: jq }
       - { name: macvim, options: 'override-system-vim', 'with-lua', 'with-cscope' }
       - { name: mysql }
       - { name: nkf }
@@ -32,7 +33,9 @@
       - { name: redis }
       - { name: ruby-build }
       - { name: sqlite }
+      - { name: tree }
       - { name: wget }
+      - { name: yarn }
       - { name: zsh, install_options: disable-etcdir }
       - { name: zsh-completions }
 
@@ -67,6 +70,7 @@
       - { name: slack }
       - { name: sourcetree }
       - { name: sublime-text }
+      - { name: TweetDeck }
       - { name: vagrant }
       - { name: virtualbox }
       - { name: vivaldi }
