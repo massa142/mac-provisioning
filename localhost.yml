@@ -29,7 +29,6 @@
       - { name: python }
       - { name: python3 }
       - { name: rbenv }
-      - { name: readline }
       - { name: redis }
       - { name: ruby-build }
       - { name: sqlite }
