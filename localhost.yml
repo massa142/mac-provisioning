@@ -37,12 +37,14 @@
       - { name: zsh-completions }
 
     homebrew_cask_packages:
+      # - { name: ⌘英かな } 
       - { name: adobe-reader }
       - { name: alfred }
       - { name: appcleaner }
       - { name: base }
       - { name: cyberduck }
       - { name: coteditor }
+      # - { name: docker } 
       - { name: dropbox }
       - { name: emacs }
       - { name: firefox }
